@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes cloudScroll {
+    0% {
+      transform: translateX(0vw);
+      /* tout à droite hors écran */
+    }
+
+    100% {
+      transform: translateX(-100%);
+      /* tout à gauche hors écran */
+    }
+  }
+
+  .animate-cloud-slow {
+    animation: cloudScroll 250s linear infinite;
+  }
+
+  .animate-cloud-medium {
+    animation: cloudScroll 180s linear infinite;
+  }
+
+  .animate-cloud-fast {
+    animation: cloudScroll 100s linear infinite;
+  }
+
+}
+
+@theme {
+  --font-sans: "Roboto", sans-serif;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-vic",
+  "version": "1.0.0",
+  "repository": "https://github.com/Vic34070/Portfolio-vic",
+  "author": "Quentin Le Guennec <quentin.leguennec1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}
