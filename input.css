@@ -39,3 +39,10 @@
 html {
   user-select: none;
 }
+
+.gradient-text {
+  background: linear-gradient(120deg, #ffffff 0%, #a855f7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

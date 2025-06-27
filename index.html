@@ -12,15 +12,12 @@
   <div
     class="fixed z-1000 top-5 inset-x-0 mx-auto h-20 border border-gray-400/15 flex justify-evenly items-center bg-white/0 backdrop-blur-[3px] text-white max-w-5xl rounded-4xl">
 
-    <span><a href="about.html">À propos</a></span>
-    <span><a href="index.html">Victoria S.</a></span>
-    <span> <a href="projets.html">Projets</a> </span>
-    <span> <a href="offen.html">Offen</a> </span>
-    <span> <a href="louvo.html">Louvo</a> </span>
-    <span> <a href="illustrations.html">Illustration</a> </span>
+    <span><a href="#header">Victoria S.</a></span>
+    <span> <a href="#about">A propos</a> </span>
+    <span> <a href="#projets">Projets</a> </span>
   </div>
 
-  <div class="grid grid-cols-1 grid-rows-1 h-screen place-items-center overflow-hidden">
+  <div id="header" class="grid grid-cols-1 grid-rows-1 h-screen place-items-center overflow-hidden">
     <img src="assets/sky.png" class="col-start-1 row-start-1 object-cover w-full h-full z-10" />
     <img src="assets/star.png" class="col-start-1 row-start-1 object-cover w-full h-full z-10" />
 
@@ -28,6 +25,8 @@
     <img src="assets/2nd_plan.png"
       class="col-start-1 row-start-1 object-cover w-full h-full z-15 animate-cloud-medium" />
     <img src="assets/1nd_plan.png" class="col-start-1 row-start-1 object-cover w-full h-full z-30 animate-cloud-fast" />
+
+    <img src="assets/dark_layer.png" class="col-start-1 row-start-1 object-cover w-full h-full z-32" />
 
     <div class="col-start-1 row-start-1 z-18 flex flex-col">
       <div class="text-white flex flex-col items-center justify-center gap-6">
@@ -39,7 +38,8 @@
       </div>
     </div>
 
-    <div class="col-start-1 row-start-1 text-white flex flex-col justify-end p-20 h-full w-full z-20">
+
+    <div class="col-start-1 row-start-1 text-white flex flex-col justify-end p-20 h-full w-full z-40">
       <div class="flex w-full justify-between">
         <div class="flex gap-3">
           <img src="assets/down_arrow.svg">
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-  <div class="flex flex-col gap-60 px-30 ">
+  <div id="about" class="flex flex-col gap-60 px-30 ">
     <div class="flex text-white h-110 mt-80">
       <div class="flex-1 self-start">
         <h6 class="text-sm font-light">à propos</h6>
@@ -262,7 +262,7 @@
     </div>
 
 
-    <div class="text-white flex flex-col items-center justify-center gap-30">
+    <div id="projets" class="text-white flex flex-col items-center justify-center gap-30">
       <div class="flex flex-col gap-10">
         <div class="flex justify-between gap-30">
           <p>Projects</p>
@@ -272,10 +272,8 @@
         </div>
 
         <div class="flex gap-20">
-          <a href="/offen">
-
+          <a href="offen.html">
             <div class="bg-[url(assets/image_offen.svg)] rounded-[20px] flex flex-col justify-end p-8 size-[360px]">
-
               <div class="flex items-center justify-between">
                 <p class="text-[34px]">Offen</p>
                 <div class="bg-white flex p-2 rounded-4xl">
@@ -286,26 +284,28 @@
             </div>
           </a>
 
-          <div class="bg-[url(assets/image_louvo.svg)] rounded-[20px] flex flex-col justify-end p-8 size-[360px]">
-
-            <div class="flex items-center justify-between">
-              <p class="text-[34px]">Louvo</p>
-              <div class="bg-white flex p-2 rounded-4xl">
-                <img src="assets/arrow_right_black.svg">
+          <a href="louvo.html">
+            <div class="bg-[url(assets/image_louvo.svg)] rounded-[20px] flex flex-col justify-end p-8 size-[360px]">
+              <div class="flex items-center justify-between">
+                <p class="text-[34px]">Louvo</p>
+                <div class="bg-white flex p-2 rounded-4xl">
+                  <img src="assets/arrow_right_black.svg">
+                </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div
-            class="bg-[url(assets/image_illustration.svg)] rounded-[20px] flex flex-col justify-end p-8 size-[360px]">
-            <div class="flex items-center justify-between">
-              <p class="text-[34px]">Illustrations</p>
-              <div class="bg-white flex p-2 rounded-4xl">
-                <img src="assets/arrow_right_black.svg">
+          <a href="illustrations.html">
+            <div
+              class="bg-[url(assets/image_illustration.svg)] rounded-[20px] flex flex-col justify-end p-8 size-[360px]">
+              <div class="flex items-center justify-between">
+                <p class="text-[34px]">Illustrations</p>
+                <div class="bg-white flex p-2 rounded-4xl">
+                  <img src="assets/arrow_right_black.svg">
+                </div>
               </div>
             </div>
-
-          </div>
+          </a>
         </div>
       </div>
       <button class="flex w-fit  items-center gap-5 p-6 border rounded-full ">
@@ -322,19 +322,7 @@
   <footer class="text-white justify-between flex p-40 mt-40">
     <div class="flex">
       <p>Victoria Surmenian <br>
-        Apprentie graphiste situé à Montpellier et au nord de la France.</p>
-    </div>
-    <div class="flex gap-20">
-      <div class="flex flex-col gap-5">
-        <h6 class="text-2xl">Site Map</h6>
-        <p class="font-extralight">Accueil</p>
-        <p class="font-extralight">Projets</p>
-        <p class="font-extralight">Contact</p>
-      </div>
-      <div class="flex flex-col gap-5">
-        <h6 class="text-2xl">Légal</h6>
-        <p class="font-extralight">Mentions légales</p>
-      </div>
+        Apprentie graphiste situé à Montpellier.</p>
     </div>
   </footer>
 
