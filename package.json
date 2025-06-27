@@ -9,6 +9,6 @@
     "tailwindcss": "^4.1.10"
   },
   "scripts": {
-    "dev": "node_modules/.bin/tailwindcss -i ./input.css -o ./output.css && npx serv"
+    "dev": "node_modules/.bin/tailwindcss -i ./input.css -o .output.css && npx serv"
   }
 }
