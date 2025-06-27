@@ -35,3 +35,7 @@
 @theme {
   --font-sans: "Roboto", sans-serif;
 }
+
+html {
+  user-select: none;
+}
